@@ -1,0 +1,8 @@
+training_set = train_datagen.flow_from_directory(trainpath,
+                                                 target_size = (224,224),
+                                                 batch_size = 10
+                                                 class_mode = 'categorical')
+test_set = test_datagen.flow_from_directory(testpath,
+                                            target_size = (224,224),
+                                            batch_size = 10
+                                            class_mode = 'categorical')                                                 
