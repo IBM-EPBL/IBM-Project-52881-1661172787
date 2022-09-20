@@ -1,0 +1,6 @@
+#Setting Parameter for image data augmentation to the training data. 
+train_datagen=ImageDataGenerator(rescale=1./255,
+shear_range=0.1,
+horizontal_flip=True)
+#image data augmentation to the testing data. 
+val_datagen=ImageDataGenerator(rescale=1./255) 
